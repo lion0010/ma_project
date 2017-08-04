@@ -1,0 +1,8 @@
+1.原网页https://www.7-eleven.com/
+2.页面上涉及到字体、字号不清楚的，可以到网上检查代码，查看font-family、font-size
+3.不确定颜色，把效果图用ps打开，吸管吸一下
+3.页面上应有的hover效果参考原网页效果实现
+4. ? 页面中会用到
+5.注意页面的布局，页面有版心。
+6.background-attachment：fixed 可以设置视差滚动效果
+6.拔高：用js，jquery或者css3实现轮播图
