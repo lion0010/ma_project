@@ -131,10 +131,13 @@ em {
     line-height: 36px;
     margin: 0 8px;
     color: #6c6c6c;
+    position:relative;
+    z-index: 110;
 }
 
 #right-nav li a {
     color: #6c6c6c;
+    display:inline-block;
 }
 
 h1 {
@@ -166,37 +169,77 @@ h3 {
     margin-top: 12px;
     margin-right: 8px;
 }
-
+#right-nav li a{
+    border:1px solid transparent;
+}
+#right-nav li:hover .hover-list{
+    border-color:#ccc;
+    background:#fff;
+    position:relative;
+    z-index:99;
+    border-bottom-color:transparent;
+}
+#right-nav li:hover .top-navlists{
+    display: block;
+}
+#right-nav #special-list:hover{
+    background-color: transparent;
+    border-color:transparent;
+}
 .choose-list ul {
     float: left;
 }
-
+.top-navlists{
+    height:auto;
+    background-color:#fff;
+    border:1px solid #ccc;
+    position:absolute;
+    top:37px;
+    display:none;
+}
+/*----------------------------------------*/
+.my{
+    width:80px;
+    height:100px;
+}
+.star{
+    width:100px;
+    height:80px;
+}
+#center{
+    width:80px;
+    height:130px;
+}
+#center a{
+    height:20px;
+}
+#service{
+    width:80px;
+    height:60px;
+}
+#service a{
+    height:20px;
+}
+.buy-car{
+    padding:15px 5px 15px 20px;
+    width:250px;
+    z-index:50;
+    display: none;
+}
+#right-nav .buy-car a{
+    height:20px;
+    line-height:20px;
+    color: #fff;
+    width:90px;
+    text-align: center;
+    background:#f40;
+    float:right;
+}
 .choose-list li {
     display: block;
     margin: 8px 4px;
     border: 1px solid transparent;
     border-top: 0;
-}
-
-#mytb:hover {
-    border: #efefef;
-    background: #fff;
-}
-
-#my {
-    position: absolute;
-    width: 85px;
-    height: 70px;
-    display: none;
-    border: 1px solid #efefef;
-    border-top: 0;
-    top: 36px;
-    left: 768px;
-    z-index: 1000;
-}
-
-#mytb:hover #my {
-    display: block;
 }
 
 #logo {
@@ -474,9 +517,11 @@ h3 {
 }
 
 #section {
-    width: 100%;
-    height: 6000px;
+    width: 1200px;
+	margin:0 auto;
+    height: 5872pxpx;
     background: #f1f1f1;
+	min-width:1180px;
 }
 
 #tu1 {
@@ -562,7 +607,6 @@ h3 {
 #hot {
     width: 890px;
     height: 78px;
-    margin-left: 165px;
     margin-top: 10px;
     background: #fff;
 }
@@ -618,7 +662,6 @@ h3 {
     height: 509px;
     width: 290px;
     float: right;
-    margin-right: 165px;
     margin-top: 10px;
 }
 
@@ -753,7 +796,6 @@ h3 {
 #usually {
     width: 890px;
     height: 763px;
-    margin-left: 165px;
     float: left;
     margin-top: 10px;
 }
@@ -1053,7 +1095,6 @@ h3 {
     height: 37px;
     background: url(icon/sprite.png) no-repeat 0 -715px;
     float: left;
-    margin-left: 165px;
     background-position: center -715px;
 }
 
@@ -1072,7 +1113,6 @@ h3 {
     width: 889px;
     height: 259px;
     float: left;
-    margin-left: 165px;
 }
 
 .main-ul {
@@ -1189,14 +1229,12 @@ h3 {
     width: 889px;
     height: 530px;
     float: left;
-    margin-left: 165px;
 }
 
 #special {
     width: 889px;
     height: 530px;
     float: left;
-    margin-left: 165px;
 }
 
 .new-pic div {
@@ -1242,7 +1280,6 @@ h3 {
     width: 890px;
     height: 275px;
     float: left;
-    margin-left: 165px;
 }
 
 .low-ul {
@@ -1347,7 +1384,6 @@ h3 {
     margin-top: 16px;
     background: url(icon/after-low.jpg) no-repeat;
     background-size: 890px 71px;
-    margin-left: 165px;
     float: left;
 }
 
@@ -1721,7 +1757,6 @@ h3 {
 
 #hot-sale {
     margin-top: 10px;
-    margin-left: 165px;
     float: left;
     background: #fff;
     width: 1191px;
@@ -1926,7 +1961,6 @@ h3 {
     height: 710px;
     background: #fff;
     float: left;
-    margin-left: 165px;
     margin-top: 10px;
 }
 
@@ -2013,7 +2047,6 @@ h3 {
     width: 1190px;
     background: #fff;
     float: left;
-    margin-left: 165px;
     margin-top: 10px;
 }
 
@@ -2146,7 +2179,6 @@ h3 {
     height: 200px;
     width: 1190px;
     float: left;
-    margin-left: 165px;
 }
 
 #end4 ul {
@@ -2220,7 +2252,6 @@ h3 {
     height: 69px;
     width: 1190px;
     float: left;
-    margin-left: 165px;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
@@ -2265,7 +2296,6 @@ h3 {
     height: 85px;
     width: 1190px;
     float: left;
-    margin-left: 165px;
 }
 
 .foot-txt span {
